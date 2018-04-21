@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceRoot}/node_modules/jest/node_modules/.bin/jest",
+            "runtimeArgs": ["--inspect-brk"],
+            "args": ["--runInBand", "--verbose", "--config=${workspaceRoot}/test/unit/jest.conf.js"],
+            "runtimeExecutable": "${env:HOME}/.ndenv/shims/node",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
+        }
+    ]
+}
